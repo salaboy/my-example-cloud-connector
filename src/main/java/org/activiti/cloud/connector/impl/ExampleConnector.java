@@ -45,6 +45,7 @@ public class ExampleConnector {
         String var1 = ExampleConnector.class.getSimpleName()+" was called for instance " + event.getIntegrationContext().getProcessInstanceId();
 
         // @TODO: add your code here
+        System.out.println("HEY THERE.. matched is: " + event.getIntegrationContext().getInBoundVariables().get("matched"));
 
         Map<String, Object> results = new HashMap<>();
         // @TODO: set your results here
